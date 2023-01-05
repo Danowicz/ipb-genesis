@@ -1,0 +1,94 @@
+@use 'sass:map';
+@use 'palettes';
+@import 'variables';
+
+$header-height: 160px;
+$footer-height: 96px;
+$content-padding: 24px;
+$content-height: calc(100vh - ($header-height + $footer-height + ($content-padding * 2)));
+
+
+.img-form-wrapper {
+    display: block;
+    height: 100vh;
+
+    &__container {
+        display: block;
+        margin: 0 auto;
+        max-width: 464px;
+        // position: relative;
+    }
+    &__header {
+        max-height: $header-height;
+        background-size: cover;
+        background-position-y: 40%;
+        padding-block: 24px 32px;
+    }
+
+    &__controls {
+        margin-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+
+        position: relative;
+        height: $content-height;
+        overflow-y: auto;
+        // max-height: $content-height;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+
+        &__wrapper {
+            // height: 100%;
+            display: flex;
+            flex-direction: column;
+            @extend .img-form-wrapper__container;
+            width: -webkit-fill-available;
+        }
+
+    }
+
+    &__actions {
+        border-top: solid 1px palettes.get-color('dark', 500);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $white;
+        width: 100%;
+        height: $footer-height;
+    }
+
+    &__copyright {
+        // position: absolute;
+        // bottom: 36px;
+        @extend .img-form-wrapper__container;
+        width: -webkit-fill-available;
+        padding-block: 24px 8px;
+        margin-top: auto;
+    }
+
+    &__title {
+        font-family: Itau Display;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 28px;
+        color: #231D19;
+    }
+}
+
+.content-demo {
+    height: 600px;
+    background-color: lightgray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}

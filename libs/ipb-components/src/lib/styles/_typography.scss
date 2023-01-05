@@ -1,0 +1,83 @@
+$font-path: '../../../assets/fonts';
+
+// # ITAU DISPLAY
+
+// Black
+@font-face {
+	font-family: 'Itau Display';
+	font-weight: 1000;
+	src: url('#{$font-path}/ItauDisplay/ItauDisplay_XBd.ttf') format('truetype'),
+}
+
+// Heavy
+@font-face {
+	font-family: 'Itau Display';
+	font-weight: 900;
+	src: url('#{$font-path}/ItauDisplay/ItauDisplay_He.ttf') format('truetype'),
+}
+
+// Extra-bold
+@font-face {
+	font-family: 'Itau Display';
+	font-weight: 800;
+	src: url('#{$font-path}/ItauDisplay/ItauDisplay_XBd.ttf') format('truetype'),
+}
+
+// Bold
+@font-face {
+	font-family: 'Itau Display';
+	font-weight: 700;
+	src: url('#{$font-path}/ItauDisplay/ItauDisplay_Bd.ttf') format('truetype'),
+}
+
+// Regular
+@font-face {
+	font-family: 'Itau Display';
+	font-weight: 400;
+	src: url('#{$font-path}/ItauDisplay/ItauDisplay_Rg.ttf') format('truetype'),
+}
+
+// Light
+@font-face {
+	font-family: 'Itau Display';
+	font-weight: 300;
+	src: url('#{$font-path}/ItauDisplay/ItauDisplay_Lt.ttf') format('truetype'),
+}
+
+
+// # ITAU TEXT
+
+// Extra-bold
+@font-face {
+	font-family: 'Itau Text';
+	font-weight: 800;
+	src: url('#{$font-path}/ItauText/ItauText_XBd.ttf') format('truetype'),
+}
+
+// Bold
+@font-face {
+	font-family: 'Itau Text';
+	font-weight: 700;
+	src: url('#{$font-path}/ItauText/ItauText_Bd.ttf') format('truetype'),
+}
+
+// Regular
+@font-face {
+	font-family: 'Itau Text';
+	font-weight: 400;
+	src: url('#{$font-path}/ItauText/ItauText_Rg.ttf') format('truetype'),
+}
+
+// Light
+@font-face {
+	font-family: 'Itau Text';
+	font-weight: 300;
+	src: url('#{$font-path}/ItauText/ItauText_Lt.ttf') format('truetype'),
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	// 1rem = 10px
+	font-size: 62.5%;
+}

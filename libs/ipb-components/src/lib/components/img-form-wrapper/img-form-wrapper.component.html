@@ -1,0 +1,32 @@
+<!-- <div class="container" [style.backgroundImage]="'url(' + backgroundImg + ')'">
+</div> -->
+
+  <div class="img-form-wrapper__header ipb-grid" [style.backgroundImage]="'url(' + backgroundImg + ')'">
+    <div class="img-form-wrapper__container">
+      <div class="img-form-wrapper__controls">
+        <span>SELECTOR</span>
+        <ipb-icon size="24" color="white" name="icon-itaufonts_fechar"></ipb-icon>
+      </div>
+
+      <div class="ipb-grid__row">
+          <img src="assets/logo-itau-private-bank.svg">
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="content__wrapper">
+        <ng-content select="[ipb-img-form-wrapper-title]"></ng-content>
+          <ng-content select="ipb-img-form-wrapper-content">
+
+          </ng-content>
+
+          <div class="content-demo">Projected Content</div>
+        </div>
+        <span class="img-form-wrapper__copyright">© 2022 - Itaú Private Bank. All rights reserved.</span>
+  </div>
+  <div class="img-form-wrapper__container">
+    <div class="img-form-wrapper__actions">
+        <ng-content select="ipb-img-form-wrapper-actions"></ng-content>
+    </div>
+  </div>

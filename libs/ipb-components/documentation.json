@@ -1,0 +1,419 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "IconComponent",
+            "id": "component-IconComponent-07967cc84f8418c92b1de11eb5daf828b1fe364fd896d7d838afc09146a484eff1a06cb287f357667cb87acd781eefc675b697ab73189ceae00116deba46d90f",
+            "file": "libs/ipb-components/src/lib/components/icon/icon.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ipb-icon",
+            "styleUrls": [],
+            "styles": [],
+            "template": "",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 24,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "name",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 20,
+                    "type": "number",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  HostBinding,\n  Input,\n} from '@angular/core';\n\n@Component({\n  selector: 'ipb-icon',\n  template: '',\n  changeDetection: ChangeDetectionStrategy.OnPush\n})\nexport class IconComponent {\n    @HostBinding('class')\n    @Input()\n    public name!: string;\n\n    @HostBinding('style.fontSize.px')\n    @Input()\n    public size!: number;\n\n    @HostBinding('style.color')\n    @Input()\n    public color!: string;\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        },
+        {
+            "name": "ImgFormWrapperActionsComponent",
+            "id": "component-ImgFormWrapperActionsComponent-1cc88f5f8c50ea5c02894764571ec172a393ad7bbcab057ba323ad44fd34ccbccdc13f9199f4ea4df755c18dec31f11c0f2077ed57b05c5c6a19ca1f30fb5ed0",
+            "file": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper-actions.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ipb-img-form-wrapper-actions",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component, ViewEncapsulation\n} from '@angular/core';\n\n@Component({\n  selector: 'ipb-img-form-wrapper-actions',\n  template: '<ng-content></ng-content>',\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ImgFormWrapperActionsComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        },
+        {
+            "name": "ImgFormWrapperComponent",
+            "id": "component-ImgFormWrapperComponent-b5862a4de3433329edda9994e5f441c5c0d255e7d73baad3f81d3883228ea9092e89a3294f4bec56590cbd376dab5baf2183fa8a54858b69faf371ab167f0708",
+            "file": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "host": {},
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ipb-img-form-wrapper",
+            "styleUrls": [
+                "./img-form-wrapper.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./img-form-wrapper.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "backgroundImg",
+                    "defaultValue": "'assets/background.jpg'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\nThe image shown as header background for mobile variation\nand as left container background for desktop variation\n",
+                    "description": "<p>The image shown as header background for mobile variation\nand as left container background for desktop variation</p>\n",
+                    "line": 23,
+                    "type": "string",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component,\n  Input,\n  ViewEncapsulation,\n} from '@angular/core';\n\n@Component({\n  selector: 'ipb-img-form-wrapper',\n  templateUrl: './img-form-wrapper.component.html',\n  styleUrls: ['./img-form-wrapper.scss'],\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  host: {\n    class: 'img-form-wrapper'\n  }\n})\nexport class ImgFormWrapperComponent {\n    /** The image shown as header background for mobile variation\n     * and as left container background for desktop variation\n     */\n    @Input()\n    public backgroundImg = 'assets/background.jpg';\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "@use 'sass:map';\n@use 'palettes';\n@import 'variables';\n\n$header-height: 160px;\n$footer-height: 96px;\n$content-padding: 24px;\n$content-height: calc(100vh - ($header-height + $footer-height + ($content-padding * 2)));\n\n\n.img-form-wrapper {\n    display: block;\n    height: 100vh;\n\n    &__container {\n        display: block;\n        margin: 0 auto;\n        max-width: 464px;\n        // position: relative;\n    }\n    &__header {\n        max-height: $header-height;\n        background-size: cover;\n        background-position-y: 40%;\n        padding-block: 24px 32px;\n    }\n\n    &__controls {\n        margin-bottom: 32px;\n        display: flex;\n        justify-content: space-between;\n    }\n\n    .content {\n\n        position: relative;\n        height: $content-height;\n        overflow-y: auto;\n        // max-height: $content-height;\n        padding: 24px;\n        display: flex;\n        flex-direction: column;\n\n        &__wrapper {\n            // height: 100%;\n            display: flex;\n            flex-direction: column;\n            @extend .img-form-wrapper__container;\n            width: -webkit-fill-available;\n        }\n\n    }\n\n    &__actions {\n        border-top: solid 1px palettes.get-color('dark', 500);\n        position: absolute;\n        bottom: 0;\n        left: 0;\n        background-color: $white;\n        width: 100%;\n        height: $footer-height;\n    }\n\n    &__copyright {\n        // position: absolute;\n        // bottom: 36px;\n        @extend .img-form-wrapper__container;\n        width: -webkit-fill-available;\n        padding-block: 24px 8px;\n        margin-top: auto;\n    }\n\n    &__title {\n        font-family: Itau Display;\n        font-size: 24px;\n        font-weight: 400;\n        line-height: 32px;\n        letter-spacing: 0em;\n        text-align: left;\n    }\n}\n\n.content-demo {\n    height: 600px;\n    background-color: aqua;\n    width: 100%;\n}\n",
+                    "styleUrl": "./img-form-wrapper.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<!-- <div class=\"container\" [style.backgroundImage]=\"'url(' + backgroundImg + ')'\">\n</div> -->\n\n  <div class=\"img-form-wrapper__header ipb-grid\" [style.backgroundImage]=\"'url(' + backgroundImg + ')'\">\n    <div class=\"img-form-wrapper__container\">\n      <div class=\"img-form-wrapper__controls\">\n        <span>SELECTOR</span>\n        <span>CLOSE</span>\n      </div>\n\n      <div class=\"ipb-grid__row\">\n          <img src=\"assets/logo-itau-private-bank.svg\">\n      </div>\n    </div>\n  </div>\n\n  <div class=\"content\">\n    <div class=\"content__wrapper\">\n        <ng-content select=\"[ipb-img-form-wrapper-title]\"></ng-content>\n          <ng-content select=\"ipb-img-form-wrapper-content\">\n\n          </ng-content>\n\n          <div class=\"content-demo\"></div>\n        </div>\n        <span class=\"img-form-wrapper__copyright\">Testando o textoo</span>\n  </div>\n  <div class=\"img-form-wrapper__container\">\n    <div class=\"img-form-wrapper__actions\">\n        <ng-content select=\"ipb-img-form-wrapper-actions\"></ng-content>\n    </div>\n  </div>\n"
+        },
+        {
+            "name": "ImgFormWrapperContentComponent",
+            "id": "component-ImgFormWrapperContentComponent-48a5680987042f4974f930e48cf45dea037cc8cb5555f0602c04f2fbb5dd7ebf66258f76c622554e4a8e875544dbf353a8bf551f07529d97769f3833620dabea",
+            "file": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper-content.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ipb-img-form-wrapper-content",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component, ViewEncapsulation\n} from '@angular/core';\n\n@Component({\n  selector: 'ipb-img-form-wrapper-content',\n  template: '<ng-content></ng-content>',\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ImgFormWrapperContentComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        },
+        {
+            "name": "ImgFormWrapperControlsComponent",
+            "id": "component-ImgFormWrapperControlsComponent-6299f3096fd47ce26a1b1548562928f0a5e5096761e90ad34ea57893087c19f0c0c2490e5b3f3273cb1e0342ac731cf74c76284d3eac3ca786d58300dab286a1",
+            "file": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper-controls.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [
+                "ViewEncapsulation.None"
+            ],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "ipb-img-form-wrapper-controls",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<ng-content></ng-content>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import {\n  ChangeDetectionStrategy,\n  Component, ViewEncapsulation\n} from '@angular/core';\n\n@Component({\n  selector: 'ipb-img-form-wrapper-controls',\n  template: '<ng-content></ng-content>',\n  encapsulation: ViewEncapsulation.None,\n  changeDetection: ChangeDetectionStrategy.OnPush,\n})\nexport class ImgFormWrapperControlsComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": ""
+        }
+    ],
+    "modules": [],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "config",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/ipb-components/.storybook/main.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "StorybookConfig",
+                "defaultValue": "{\n  ...rootMain,\n  core: { ...rootMain.core, builder: 'webpack5' },\n  stories: [\n    ...rootMain.stories,\n    '../**/*.stories.mdx',\n    '../**/*.stories.@(js|jsx|ts|tsx)',\n  ],\n  addons: [...(rootMain.addons || [])],\n  webpackFinal: async (config, { configType }: Options) => {\n    // apply any global webpack configs that might have been specified in .storybook/main.ts\n    if (rootMain.webpackFinal) {\n      config = await rootMain.webpackFinal(config, { configType } as Options);\n    }\n\n    // add your own webpack tweaks if needed\n    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion\n    config.module!.rules!.push(\n        {\n            test: /\\.css$/,\n            use: ['style-loader', 'css-loader'],\n        }\n    );\n\n    return config;\n  },\n  staticDirs: [{from: '../assets', 'to': '/assets'}]\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/ipb-components/src/lib/components/icon/stories/icon.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args: Args) => {\n    return {\n      props: {\n        ...args\n      },\n      template: `\n        <ipb-icon\n            [name]=\"name\"\n            [size]=\"size\"\n            [color]=\"color\"\n        ></ipb-icon>\n      `,\n    }\n}"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/ipb-components/src/lib/components/img-form-wrapper/stories/img-form-wrapper.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "(args: Args) => {\n    return {\n      props: {\n        ...args\n      },\n      template: `\n        <ipb-img-form-wrapper [backgroundImg]=\"backgroundImg\">\n            <h1 ipb-img-form-wrapper-title>Teste</h1>\n        </ipb-img-form-wrapper>\n        <ipb-button></ipb-button>`,\n    }\n}"
+            },
+            {
+                "name": "parameters",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "libs/ipb-components/.storybook/preview.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "object",
+                "defaultValue": "{\n    backgrounds: {\n        default: 'light'\n    }\n}"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "libs/ipb-components/.storybook/main.ts": [
+                {
+                    "name": "config",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/ipb-components/.storybook/main.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "StorybookConfig",
+                    "defaultValue": "{\n  ...rootMain,\n  core: { ...rootMain.core, builder: 'webpack5' },\n  stories: [\n    ...rootMain.stories,\n    '../**/*.stories.mdx',\n    '../**/*.stories.@(js|jsx|ts|tsx)',\n  ],\n  addons: [...(rootMain.addons || [])],\n  webpackFinal: async (config, { configType }: Options) => {\n    // apply any global webpack configs that might have been specified in .storybook/main.ts\n    if (rootMain.webpackFinal) {\n      config = await rootMain.webpackFinal(config, { configType } as Options);\n    }\n\n    // add your own webpack tweaks if needed\n    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion\n    config.module!.rules!.push(\n        {\n            test: /\\.css$/,\n            use: ['style-loader', 'css-loader'],\n        }\n    );\n\n    return config;\n  },\n  staticDirs: [{from: '../assets', 'to': '/assets'}]\n}"
+                }
+            ],
+            "libs/ipb-components/src/lib/components/icon/stories/icon.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/ipb-components/src/lib/components/icon/stories/icon.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args: Args) => {\n    return {\n      props: {\n        ...args\n      },\n      template: `\n        <ipb-icon\n            [name]=\"name\"\n            [size]=\"size\"\n            [color]=\"color\"\n        ></ipb-icon>\n      `,\n    }\n}"
+                }
+            ],
+            "libs/ipb-components/src/lib/components/img-form-wrapper/stories/img-form-wrapper.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/ipb-components/src/lib/components/img-form-wrapper/stories/img-form-wrapper.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "(args: Args) => {\n    return {\n      props: {\n        ...args\n      },\n      template: `\n        <ipb-img-form-wrapper [backgroundImg]=\"backgroundImg\">\n            <h1 ipb-img-form-wrapper-title>Teste</h1>\n        </ipb-img-form-wrapper>\n        <ipb-button></ipb-button>`,\n    }\n}"
+                }
+            ],
+            "libs/ipb-components/.storybook/preview.ts": [
+                {
+                    "name": "parameters",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "libs/ipb-components/.storybook/preview.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "object",
+                    "defaultValue": "{\n    backgrounds: {\n        default: 'light'\n    }\n}"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 5,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "libs/ipb-components/.storybook/main.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "config",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/.storybook/preview.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "parameters",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/icon/icon.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "IconComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/icon/stories/icon.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper-actions.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImgFormWrapperActionsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper-content.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImgFormWrapperContentComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper-controls.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImgFormWrapperControlsComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/img-form-wrapper/img-form-wrapper.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ImgFormWrapperComponent",
+                "coveragePercent": 50,
+                "coverageCount": "1/2",
+                "status": "medium"
+            },
+            {
+                "filePath": "libs/ipb-components/src/lib/components/img-form-wrapper/stories/img-form-wrapper.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

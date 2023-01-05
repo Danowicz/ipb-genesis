@@ -1,0 +1,5 @@
+@use '../components/img-form-wrapper/img-form-wrapper.theme.scss';
+
+.ipb-theme {
+    @include img-form-wrapper.theme()
+}
